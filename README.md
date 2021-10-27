@@ -13,15 +13,15 @@
 
 </div>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DevN2/AsunaBot/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/EorroBot26/E26/)
 
-[![Run on Repl.it](https://repl.it/badge/github/DevN2/AsunaBot)](https://repl.it/github/DevN2/AsunaBot)
+[![Run on Repl.it](https://repl.it/badge/github/DevN2/AsunaBot)](https://repl.it/github/EorroBot26/E26)
 
 
 ### Install ⬇️
 
 ```bash
-> git clone https://github.com/DevN2/AsunaBot
+> git clone https://github.com/EorroBot26/E26
 > cd whatsapp-bot
 > npm i
 ```
