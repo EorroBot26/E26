@@ -369,7 +369,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
@@ -439,7 +439,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
@@ -476,7 +476,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
@@ -516,7 +516,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh open/close",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
