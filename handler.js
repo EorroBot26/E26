@@ -279,7 +279,7 @@ module.exports = handle = (client, Client) => {
             Client.acceptInviteLink(data.body).then(() => data.reply('ok')).catch(() => data.reply('failed'))
         })
         Client.cmd.on('owner', async (data) => {
-            Client.reply(from, `Ingin Memberi masukan/menghubungi owner?Silahkan masuk group asuna!`)
+            Client.reply(from, `Ingin Memberi masukan/menghubungi owner?Silahkan masuk group EorroBot! / chat no owner ! wa.me/6281224066722`)
         })
         Client.cmd.on('premium', async (data) => {
             if(!data.isOwner) return data.reply(mess.ownerOnly)
