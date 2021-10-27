@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DevN2/AsunaBot.git"
+    "url": "git+https://github.com/EorroBot26/E26.git"
   },
   "author": "devn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DevN2/AsunaBot/issues"
+    "url": "https://github.com/EorroBot26/E26/issues"
   },
-  "homepage": "https://github.com/DevN2/AsunaBot#readme"
+  "homepage": "https://github.com/EorroBot26/E26#readme"
 }
