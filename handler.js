@@ -279,7 +279,7 @@ module.exports = handle = (client, Client) => {
             Client.acceptInviteLink(data.body).then(() => data.reply('ok')).catch(() => data.reply('failed'))
         })
         Client.cmd.on('owner', async (data) => {
-            Client.reply(from, `Ingin Memberi masukan/menghubungi owner?Silahkan masuk group asuna!`)
+            Client.reply(from, `Ingin Memberi masukan/menghubungi owner?Silahkan masuk group Eorro!`)
         })
         Client.cmd.on('premium', async (data) => {
             if(!data.isOwner) return data.reply(mess.ownerOnly)
@@ -369,7 +369,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
@@ -516,7 +516,7 @@ module.exports = handle = (client, Client) => {
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh open/close",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
