@@ -360,12 +360,12 @@ module.exports = handle = (client, Client) => {
                 if(dataGc[data.from].welcome) return data.reply('Already on!')
                 dataGc[data.from].welcome = true
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Sukses diaktifkan!')
             } else if(data.args[0].toLowerCase() == 'off') {
                 if(!dataGc[data.from].welcome) return data.reply('Already off!')
                 dataGc[data.from].welcome = false
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Sukses dinonaktifkan!')
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
