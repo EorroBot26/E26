@@ -270,7 +270,7 @@ module.exports = handle = (client, Client) => {
             var ext = data.isQuotedImage ? 'jpg' : 'mp4'
             list.forEach(async dataC => {
                 if(mediaBuffer) Client.sendFileFromBase64(dataC.jid, mediaBuffer.toString('base64'), `bc.${ext}`, `*AsunaBot Broadcast*\n\n${data.body} ${dataC.jid.endsWith('@g.us') ?'\n\n_#izin admin grup _*'+dataC.name+'*_' : ''}`)
-                else Client.sendText(dataC.jid, `*AsunaBot Broadcast*\n\n${data.body}\n\n`)
+                else Client.sendText(dataC.jid, `*EorroBot Broadcast*\n\n${data.body}\n\n`)
             })
         })
         Client.cmd.on('join', async (data) => {
@@ -279,7 +279,7 @@ module.exports = handle = (client, Client) => {
             Client.acceptInviteLink(data.body).then(() => data.reply('ok')).catch(() => data.reply('failed'))
         })
         Client.cmd.on('owner', async (data) => {
-            Client.reply(from, `Ingin Memberi masukan/menghubungi owner?Silahkan masuk group Eorro!`)
+            Client.reply(from, `Ingin Memberi masukan/menghubungi owner? Silahkan masuk group Eorro atau PC Me wa.me/6281224066722`)
         })
         Client.cmd.on('premium', async (data) => {
             if(!data.isOwner) return data.reply(mess.ownerOnly)
@@ -430,16 +430,16 @@ module.exports = handle = (client, Client) => {
                 if(dataGc[data.from].leave) return data.reply('Already on!')
                 dataGc[data.from].leave = true
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Sukses diaktifkan!')
             } else if(data.args[0].toLowerCase() == 'off') {
                 if(!dataGc[data.from].leave) return data.reply('Already off!')
                 dataGc[data.from].leave = false
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Sukses dinonaktifkan!')
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
@@ -467,16 +467,16 @@ module.exports = handle = (client, Client) => {
                 if(dataGc[data.from].antilink) return data.reply('Already on!')
                 dataGc[data.from].antilink = true
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Antilink di group sudah diaktifkan jadi jangan coba coba kirim link group yah :)')
             } else if(data.args[0].toLowerCase() == 'off') {
                 if(!dataGc[data.from].antilink) return data.reply('Already off!')
                 dataGc[data.from].antilink = false
                 fs.writeFileSync('./lib/json/dataGc.json', JSON.stringify(dataGc))
-                data.reply('Sukses!')
+                data.reply('Antilink group ini sudah tidak aktif lagi!')
             } else {
                 let po = client.prepareMessageFromContent(data.from, {
                     "listMessage":{
-                  "title": "*AsunaBot*",
+                  "title": "*EorroBot*",
                   "description": "pilh on/off",
                   "buttonText": "COMMANDS",
                   "listType": "SINGLE_SELECT",
